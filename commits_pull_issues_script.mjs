@@ -5,11 +5,11 @@ import { Octokit } from '@octokit/rest';
 
 const git = simpleGit();
 const octokit = new Octokit({
-    auth: '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', // Replace with your GitHub token
+    auth: 'token', // Replace with your GitHub token
 });
 
-const owner = 'abdelillahbel'; // Replace with your GitHub username
-const repo = '100DaysOfCode';  // Replace with your repository name
+const owner = 'username'; // Replace with your GitHub username
+const repo = 'repo';  // Replace with your repository name
 
 async function shouldCreateTask(probability) {
     return Math.random() < probability;
